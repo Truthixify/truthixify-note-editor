@@ -30,11 +30,11 @@ const NoteItem = ({ note }) => {
             to={`/notes/${id}`}
           >
             <BookOpenIcon width={100} />
-            <p>{title}</p>
+            <p>{String(title).slice(0, 20).length < 20 ? title : `${String(title).slice(0, 20)}...`}</p>
           </Link>
         </div>
         <div className="flex-lg mb">
-          <p>{String(content).slice(0, 80).length < 80 ? content : `${String(content).slice(0, 200)}...`}</p>
+          <p>{String(content).slice(0, 20).length < 20 ? content : `${String(content).slice(0, 20)}...`}</p>
         </div>
       </div>
       <div className="flex-sm mb">
