@@ -556,3 +556,13 @@ a {
 mt-30 {
   margin-top: 30px;
 }
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background: #eee;
+}

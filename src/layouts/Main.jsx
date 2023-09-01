@@ -6,6 +6,7 @@ import { fetchData } from "../../helpers"
 
 //components
 import Nav from "../components/Nav"
+import Footer from "../components/Footer"
 
 //loader function
 export function mainLoader() {
@@ -22,6 +23,7 @@ const Main = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }
